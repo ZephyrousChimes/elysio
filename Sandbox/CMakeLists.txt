@@ -9,7 +9,7 @@ set_target_properties(Sandbox PROPERTIES
 
 target_sources(Sandbox
         PRIVATE
-                src/Application.cpp
+        src/SandboxApp.cpp
 )
 
 target_include_directories(Sandbox

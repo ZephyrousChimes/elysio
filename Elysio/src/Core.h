@@ -9,7 +9,7 @@
 #elif defined(__linux__)
     #define EL_PLATFORM_LINUX
 #else
-    #error "Unsupported platform: Only Windows and Linux are supported"
+    #error "Unsupported platform: Only Windows(_WIN32 or _WIN64) and Linux (__linux__) are supported. Please pass in correct macros while compilation"
 #endif
 
 #ifdef EL_PLATFORM_WINDOWS
