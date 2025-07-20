@@ -1,5 +1,9 @@
 add_library(Elysio SHARED
-		include/Elysio/Core.h)
+		src/Core.h
+		src/Application.h
+		src/Application.cpp
+		src/Application.h
+		src/EntryPoint.h)
 
 set_target_properties(Elysio PROPERTIES
 	RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_DIR}/$<CONFIG>/Elysio
@@ -10,13 +14,14 @@ set_target_properties(Elysio PROPERTIES
 
 target_sources(Elysio
 	PRIVATE
-		src/Elysio.cpp
-		include/Elysio/Elysio.h
-		include/Elysio/Core.h
+		Elysio.h
+		src/Core.h
+		src/Application.cpp
+		src/Application.h
 )
 
 target_include_directories(Elysio
-	PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
+	PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 target_compile_definitions(Elysio PRIVATE EL_BUILD_DLL)
