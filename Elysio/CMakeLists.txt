@@ -3,7 +3,9 @@ add_library(Elysio SHARED
 		include/Elysio/Application.h
 		src/Application.cpp
 		include/Elysio/Application.h
-		include/Elysio/EntryPoint.h)
+		include/Elysio/EntryPoint.h
+		src/Log.cpp
+		include/Elysio/Log.h)
 
 set_target_properties(Elysio PROPERTIES
 	RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_DIR}/$<CONFIG>/Elysio

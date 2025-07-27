@@ -5,18 +5,19 @@
 #pragma once
 #include "Core.h"
 
+namespace Elysio
+{
 
-namespace Elysio {
+class EL_API Application
+{
+   public:
+    Application();
+    virtual ~Application();
 
-    class EL_API Application {
-    public:
-        Application();
-        virtual ~Application();
+    void Run();
+};
 
-        void Run();
-    };
+// Definition in CLIENT application
+Application* CreateApplication();
 
-    // Definition in CLIENT application
-    Application* CreateApplication();
-
-}
+}  // namespace Elysio

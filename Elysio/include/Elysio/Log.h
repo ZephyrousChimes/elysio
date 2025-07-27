@@ -6,9 +6,12 @@
 
 #include "Core.h"
 
-class Log {
-public:
+namespace Elysio
+{
+class EL_API Log
+{
+   public:
     Log();
     ~Log();
 };
-
+}  // namespace Elysio

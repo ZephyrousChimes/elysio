@@ -7,18 +7,14 @@
 
 namespace Elysio
 {
-    Application::Application()
-    {
-    }
+Application::Application() {}
 
-    Application::~Application()
-    {
-    }
+Application::~Application() {}
 
-    void Application::Run()
-    {
-        printf("Welcome to Elysio!\n");
-        while (true);
-    }
+void Application::Run()
+{
+    printf("Welcome to Elysio!\n");
+    while (true)
+        ;
 }
-
+}  // namespace Elysio
