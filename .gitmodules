@@ -1,0 +1,3 @@
+[submodule "Elysio/vendor/spdlog"]
+	path = Elysio/vendor/spdlog
+	url = https://github.com/gabime/spdlog.git

@@ -17,13 +17,14 @@ set_target_properties(Elysio PROPERTIES
 target_sources(Elysio
 		PRIVATE
 				include/Elysio/Elysio.h
-		include/Elysio/Core.h
+				include/Elysio/Core.h
 				src/Application.cpp
-		include/Elysio/Application.h
+				include/Elysio/Application.h
 )
 
 target_include_directories(Elysio
 		PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
+		PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/vendor/spdlog/include
 )
 
 target_compile_definitions(Elysio PRIVATE EL_BUILD_DLL)
