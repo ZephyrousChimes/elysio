@@ -3,7 +3,7 @@
 //
 
 #ifdef EL_PLATFORM_WINDOWS
-
+#error
 #elif defined(EL_PLATFORM_LINUX)
 
 extern Elysio::Application* Elysio::CreateApplication();

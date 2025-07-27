@@ -1,4 +1,4 @@
-#include <Elysio.h>
+#include <Elysio/Elysio.h>
 #include <cstdio>
 
 class Sandbox: public Elysio::Application

@@ -8,7 +8,7 @@
 
 namespace Elysio {
 
-    EL_API class Application {
+    class EL_API Application {
     public:
         Application();
         virtual ~Application();
