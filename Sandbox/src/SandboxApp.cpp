@@ -1,16 +1,12 @@
-#include <Elysio.h>
+#include <Elysio/Elysio.h>
 #include <cstdio>
 
-class Sandbox: public Elysio::Application
+class Sandbox : public Elysio::Application
 {
-public:
-    Sandbox()
-    {
-    }
+   public:
+    Sandbox() {}
 
-    ~Sandbox()
-    {
-    }
+    ~Sandbox() {}
 };
 
 Elysio::Application* Elysio::CreateApplication()
