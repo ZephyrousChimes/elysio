@@ -22,5 +22,4 @@ void Log::Init()
     s_ClientLogger->set_level(spdlog::level::trace);
 }
 
-}
-
+}  // namespace Elysio
