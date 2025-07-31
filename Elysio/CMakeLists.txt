@@ -1,11 +1,11 @@
 add_library(Elysio SHARED
-		include/Elysio/Core.h
-		include/Elysio/Application.h
-		src/Application.cpp
-		include/Elysio/Application.h
-		include/Elysio/EntryPoint.h
-		src/Log.cpp
-		include/Elysio/Log.h)
+		include/Elysio/Core/Core.h
+		include/Elysio/Core/Application.h
+		src/Core/Application.cpp
+		include/Elysio/Core/Application.h
+		include/Elysio/Core/EntryPoint.h
+		src/Core/Log.cpp
+		include/Elysio/Core/Log.h)
 
 set_target_properties(Elysio PROPERTIES
 	RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_DIR}/$<CONFIG>/Elysio
@@ -17,9 +17,9 @@ set_target_properties(Elysio PROPERTIES
 target_sources(Elysio
 		PRIVATE
 				include/Elysio/Elysio.h
-				include/Elysio/Core.h
-				src/Application.cpp
-				include/Elysio/Application.h
+				include/Elysio/Core/Core.h
+				src/Core/Application.cpp
+				include/Elysio/Core/Application.h
 )
 
 target_include_directories(Elysio

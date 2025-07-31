@@ -1,0 +1,258 @@
+.
+├── bin
+│   └── Debug
+│       ├── Elysio
+│       │   └── libElysio.so
+│       └── Sandbox
+│           └── Sandbox
+├── bin-int
+├── cmake-build-debug
+│   ├── build.ninja
+│   ├── CMakeCache.txt
+│   ├── CMakeFiles
+│   │   ├── 3.31.6
+│   │   │   ├── CMakeCCompiler.cmake
+│   │   │   ├── CMakeCXXCompiler.cmake
+│   │   │   ├── CMakeDetermineCompilerABI_C.bin
+│   │   │   ├── CMakeDetermineCompilerABI_CXX.bin
+│   │   │   ├── CMakeSystem.cmake
+│   │   │   ├── CompilerIdC
+│   │   │   │   ├── a.out
+│   │   │   │   ├── CMakeCCompilerId.c
+│   │   │   │   └── tmp
+│   │   │   └── CompilerIdCXX
+│   │   │       ├── a.out
+│   │   │       ├── CMakeCXXCompilerId.cpp
+│   │   │       └── tmp
+│   │   ├── clion-Debug-log.txt
+│   │   ├── clion-environment.txt
+│   │   ├── cmake.check_cache
+│   │   ├── CMakeConfigureLog.yaml
+│   │   ├── pkgRedirects
+│   │   ├── rules.ninja
+│   │   └── TargetDirectories.txt
+│   ├── cmake_install.cmake
+│   ├── Elysio
+│   │   ├── CMakeFiles
+│   │   │   └── Elysio.dir
+│   │   │       └── src
+│   │   │           └── Core
+│   │   └── cmake_install.cmake
+│   ├── Sandbox
+│   │   ├── CMakeFiles
+│   │   │   └── Sandbox.dir
+│   │   │       └── src
+│   │   └── cmake_install.cmake
+│   └── Testing
+│       └── Temporary
+│           └── LastTest.log
+├── CMakeLists.txt
+├── copy
+├── Elysio
+│   ├── CMakeLists.txt
+│   ├── include
+│   │   └── Elysio
+│   │       ├── Core
+│   │       │   ├── Application.h
+│   │       │   ├── Core.h
+│   │       │   ├── EntryPoint.h
+│   │       │   └── Log.h
+│   │       ├── Elysio.h
+│   │       └── Events
+│   ├── src
+│   │   ├── Core
+│   │   │   ├── Application.cpp
+│   │   │   └── Log.cpp
+│   │   └── Events
+│   └── vendor
+│       └── spdlog
+│           ├── appveyor.yml
+│           ├── bench
+│           │   ├── async_bench.cpp
+│           │   ├── bench.cpp
+│           │   ├── CMakeLists.txt
+│           │   ├── formatter-bench.cpp
+│           │   ├── latency.cpp
+│           │   └── utils.h
+│           ├── cmake
+│           │   ├── ide.cmake
+│           │   ├── pch.h.in
+│           │   ├── spdlogConfig.cmake.in
+│           │   ├── spdlogCPack.cmake
+│           │   ├── spdlog.pc.in
+│           │   ├── utils.cmake
+│           │   └── version.rc.in
+│           ├── CMakeLists.txt
+│           ├── example
+│           │   ├── CMakeLists.txt
+│           │   └── example.cpp
+│           ├── include
+│           │   └── spdlog
+│           │       ├── async.h
+│           │       ├── async_logger.h
+│           │       ├── async_logger-inl.h
+│           │       ├── cfg
+│           │       │   ├── argv.h
+│           │       │   ├── env.h
+│           │       │   ├── helpers.h
+│           │       │   └── helpers-inl.h
+│           │       ├── common.h
+│           │       ├── common-inl.h
+│           │       ├── details
+│           │       │   ├── backtracer.h
+│           │       │   ├── backtracer-inl.h
+│           │       │   ├── circular_q.h
+│           │       │   ├── console_globals.h
+│           │       │   ├── file_helper.h
+│           │       │   ├── file_helper-inl.h
+│           │       │   ├── fmt_helper.h
+│           │       │   ├── log_msg_buffer.h
+│           │       │   ├── log_msg_buffer-inl.h
+│           │       │   ├── log_msg.h
+│           │       │   ├── log_msg-inl.h
+│           │       │   ├── mpmc_blocking_q.h
+│           │       │   ├── null_mutex.h
+│           │       │   ├── os.h
+│           │       │   ├── os-inl.h
+│           │       │   ├── periodic_worker.h
+│           │       │   ├── periodic_worker-inl.h
+│           │       │   ├── registry.h
+│           │       │   ├── registry-inl.h
+│           │       │   ├── synchronous_factory.h
+│           │       │   ├── tcp_client.h
+│           │       │   ├── tcp_client-windows.h
+│           │       │   ├── thread_pool.h
+│           │       │   ├── thread_pool-inl.h
+│           │       │   ├── udp_client.h
+│           │       │   ├── udp_client-windows.h
+│           │       │   └── windows_include.h
+│           │       ├── fmt
+│           │       │   ├── bin_to_hex.h
+│           │       │   ├── bundled
+│           │       │   │   ├── args.h
+│           │       │   │   ├── base.h
+│           │       │   │   ├── chrono.h
+│           │       │   │   ├── color.h
+│           │       │   │   ├── compile.h
+│           │       │   │   ├── core.h
+│           │       │   │   ├── fmt.license.rst
+│           │       │   │   ├── format.h
+│           │       │   │   ├── format-inl.h
+│           │       │   │   ├── os.h
+│           │       │   │   ├── ostream.h
+│           │       │   │   ├── printf.h
+│           │       │   │   ├── ranges.h
+│           │       │   │   ├── std.h
+│           │       │   │   └── xchar.h
+│           │       │   ├── chrono.h
+│           │       │   ├── compile.h
+│           │       │   ├── fmt.h
+│           │       │   ├── ostr.h
+│           │       │   ├── ranges.h
+│           │       │   ├── std.h
+│           │       │   └── xchar.h
+│           │       ├── formatter.h
+│           │       ├── fwd.h
+│           │       ├── logger.h
+│           │       ├── logger-inl.h
+│           │       ├── mdc.h
+│           │       ├── pattern_formatter.h
+│           │       ├── pattern_formatter-inl.h
+│           │       ├── sinks
+│           │       │   ├── android_sink.h
+│           │       │   ├── ansicolor_sink.h
+│           │       │   ├── ansicolor_sink-inl.h
+│           │       │   ├── base_sink.h
+│           │       │   ├── base_sink-inl.h
+│           │       │   ├── basic_file_sink.h
+│           │       │   ├── basic_file_sink-inl.h
+│           │       │   ├── callback_sink.h
+│           │       │   ├── daily_file_sink.h
+│           │       │   ├── dist_sink.h
+│           │       │   ├── dup_filter_sink.h
+│           │       │   ├── hourly_file_sink.h
+│           │       │   ├── kafka_sink.h
+│           │       │   ├── mongo_sink.h
+│           │       │   ├── msvc_sink.h
+│           │       │   ├── null_sink.h
+│           │       │   ├── ostream_sink.h
+│           │       │   ├── qt_sinks.h
+│           │       │   ├── ringbuffer_sink.h
+│           │       │   ├── rotating_file_sink.h
+│           │       │   ├── rotating_file_sink-inl.h
+│           │       │   ├── sink.h
+│           │       │   ├── sink-inl.h
+│           │       │   ├── stdout_color_sinks.h
+│           │       │   ├── stdout_color_sinks-inl.h
+│           │       │   ├── stdout_sinks.h
+│           │       │   ├── stdout_sinks-inl.h
+│           │       │   ├── syslog_sink.h
+│           │       │   ├── systemd_sink.h
+│           │       │   ├── tcp_sink.h
+│           │       │   ├── udp_sink.h
+│           │       │   ├── wincolor_sink.h
+│           │       │   ├── wincolor_sink-inl.h
+│           │       │   └── win_eventlog_sink.h
+│           │       ├── spdlog.h
+│           │       ├── spdlog-inl.h
+│           │       ├── stopwatch.h
+│           │       ├── tweakme.h
+│           │       └── version.h
+│           ├── INSTALL
+│           ├── LICENSE
+│           ├── logos
+│           │   ├── jetbrains-variant-4.svg
+│           │   └── spdlog.png
+│           ├── README.md
+│           ├── scripts
+│           │   ├── ci_setup_clang.sh
+│           │   ├── extract_version.py
+│           │   └── format.sh
+│           ├── src
+│           │   ├── async.cpp
+│           │   ├── bundled_fmtlib_format.cpp
+│           │   ├── cfg.cpp
+│           │   ├── color_sinks.cpp
+│           │   ├── file_sinks.cpp
+│           │   ├── spdlog.cpp
+│           │   └── stdout_sinks.cpp
+│           └── tests
+│               ├── CMakeLists.txt
+│               ├── includes.h
+│               ├── main.cpp
+│               ├── test_async.cpp
+│               ├── test_backtrace.cpp
+│               ├── test_bin_to_hex.cpp
+│               ├── test_cfg.cpp
+│               ├── test_circular_q.cpp
+│               ├── test_create_dir.cpp
+│               ├── test_custom_callbacks.cpp
+│               ├── test_daily_logger.cpp
+│               ├── test_dup_filter.cpp
+│               ├── test_errors.cpp
+│               ├── test_eventlog.cpp
+│               ├── test_file_helper.cpp
+│               ├── test_file_logging.cpp
+│               ├── test_fmt_helper.cpp
+│               ├── test_macros.cpp
+│               ├── test_misc.cpp
+│               ├── test_mpmc_q.cpp
+│               ├── test_pattern_formatter.cpp
+│               ├── test_registry.cpp
+│               ├── test_ringbuffer.cpp
+│               ├── test_sink.h
+│               ├── test_stdout_api.cpp
+│               ├── test_stopwatch.cpp
+│               ├── test_systemd.cpp
+│               ├── test_time_point.cpp
+│               ├── utils.cpp
+│               └── utils.h
+├── format.sh
+├── LICENSE
+├── README.md
+└── Sandbox
+    ├── CMakeLists.txt
+    └── src
+        └── SandboxApp.cpp
+
+51 directories, 205 files

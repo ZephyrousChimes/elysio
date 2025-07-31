@@ -2,7 +2,7 @@
 // Created by kronos on 7/27/25.
 //
 
-#include "../include/Elysio/Log.h"
+#include "../../include/Elysio/Core/Log.h"
 
 #include "spdlog/sinks/stdout_color_sinks.h"
 
