@@ -5,7 +5,14 @@ add_library(Elysio SHARED
 		include/Elysio/Core/Application.h
 		include/Elysio/Core/EntryPoint.h
 		src/Core/Log.cpp
-		include/Elysio/Core/Log.h)
+		include/Elysio/Core/Log.h
+		include/Elysio/Events/Event.h
+		include/Elysio/Core/Base.h
+		include/Elysio/Events/KeyEvent.h
+		include/Elysio/Core/KeyCodes.h
+		include/Elysio/Events/MouseEvent.h
+		include/Elysio/Core/MouseCodes.h
+		include/Elysio/Events/ApplicationEvent.h)
 
 set_target_properties(Elysio PROPERTIES
 	RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_DIR}/$<CONFIG>/Elysio
