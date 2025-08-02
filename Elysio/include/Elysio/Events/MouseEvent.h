@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include <sstream>
+#include "Elysio/Core/ElysioPCH.h"
 
 #include "Elysio/Core/MouseCodes.h"
 #include "Elysio/Events/Event.h"

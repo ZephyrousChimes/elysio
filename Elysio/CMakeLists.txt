@@ -12,7 +12,8 @@ add_library(Elysio SHARED
 		include/Elysio/Core/KeyCodes.h
 		include/Elysio/Events/MouseEvent.h
 		include/Elysio/Core/MouseCodes.h
-		include/Elysio/Events/ApplicationEvent.h)
+		include/Elysio/Events/ApplicationEvent.h
+		include/Elysio/Core/ElysioPCH.h)
 
 set_target_properties(Elysio PROPERTIES
 	RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_DIR}/$<CONFIG>/Elysio
@@ -27,6 +28,10 @@ target_sources(Elysio
 				include/Elysio/Core/Core.h
 				src/Core/Application.cpp
 				include/Elysio/Core/Application.h
+)
+
+target_precompile_headers(Elysio PRIVATE
+		${CMAKE_CURRENT_SOURCE_DIR}/include/Elysio/Core/ElysioPCH.h
 )
 
 target_include_directories(Elysio

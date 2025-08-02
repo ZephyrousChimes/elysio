@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include <string>
+#include "Elysio/Core/ElysioPCH.h"
 
 #include "Elysio/Core/Base.h"
 

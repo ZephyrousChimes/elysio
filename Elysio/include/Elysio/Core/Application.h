@@ -3,7 +3,11 @@
 //
 
 #pragma once
+
+#include "Elysio/Core/ElysioPCH.h"
+
 #include "Core.h"
+#include "Elysio/Events/Event.h"
 
 namespace Elysio
 {

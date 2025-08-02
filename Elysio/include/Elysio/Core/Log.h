@@ -4,10 +4,11 @@
 
 #pragma once
 
-#include <memory>
+#include <Elysio/Core/ElysioPCH.h>
 
 #include "Core.h"
 #include "spdlog/spdlog.h"
+#include "spdlog/fmt/ostr.h"
 
 namespace Elysio
 {
@@ -39,8 +40,8 @@ class EL_API Log
 #define EL_CORE_FATAL(...) ::Elysio::Log::GetCoreLogger()->fatal(__VA_ARGS__)
 
 // Client Log mappers
-#define EL_CLIENT_TRACE(...) ::Elysio::Log::GetClientLogger()->trace(__VA_ARGS__)
-#define EL_CLIENT_INFO(...) ::Elysio::Log::GetClientLogger()->info(__VA_ARGS__)
-#define EL_CLIENT_WARN(...) ::Elysio::Log::GetClientLogger()->warn(__VA_ARGS__)
-#define EL_CLIENT_ERROR(...) ::Elysio::Log::GetClientLogger()->error(__VA_ARGS__)
-#define EL_CLIENT_FATAL(...) ::Elysio::Log::GetClientLogger()->fatal(__VA_ARGS__)
+#define EL_TRACE(...) ::Elysio::Log::GetClientLogger()->trace(__VA_ARGS__)
+#define EL_INFO(...) ::Elysio::Log::GetClientLogger()->info(__VA_ARGS__)
+#define EL_WARN(...) ::Elysio::Log::GetClientLogger()->warn(__VA_ARGS__)
+#define EL_ERROR(...) ::Elysio::Log::GetClientLogger()->error(__VA_ARGS__)
+#define EL_FATAL(...) ::Elysio::Log::GetClientLogger()->fatal(__VA_ARGS__)
